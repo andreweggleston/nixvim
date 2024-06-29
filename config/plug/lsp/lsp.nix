@@ -7,33 +7,13 @@
       enable = true;
       inlayHints = true;
       servers = {
-        html = {
-          enable = true;
-        };
-        lua_ls = {
-          enable = true;
-        };
-        # nil-ls = {
-        #   enable = true;
-        # };
         nixd = {
-          enable = true;
-        };
-        marksman = {
-          enable = true;
-        };
-        pyright = {
           enable = true;
         };
         gopls = {
           enable = true;
         };
-        terraformls = {
-          enable = true;
-        };
-        yamlls = {
-          enable = true;
-        };
+        clangd = {enable = true;};
       };
       keymaps = {
         silent = true;

@@ -12,7 +12,6 @@
     ./plug/completion/codecompanion.nix
     ./plug/completion/copilot-cmp.nix
     ./plug/completion/lspkind.nix
-    ./plug/completion/schemastore.nix
 
     ./plug/git/gitblame.nix
     ./plug/git/gitlinker.nix
@@ -66,7 +65,6 @@
     ./plug/utils/ufo.nix
     ./plug/utils/undotree.nix
     ./plug/utils/whichkey.nix
-    ./plug/utils/yaml-companion.nix
   ];
   options = {
     theme = lib.mkOption {

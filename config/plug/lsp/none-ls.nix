@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   plugins.none-ls = {
     enable = true;
     enableLspFormat = true;
@@ -13,7 +12,6 @@
       };
       diagnostics = {
         statix.enable = true;
-        yamllint.enable = true;
       };
       formatting = {
         nixfmt = {
@@ -28,20 +26,6 @@
             }
           '';
         };
-        prettier = {
-          enable = true;
-          disableTsServerFormatter = true;
-          settings = ''
-            {
-              extra_args = { "--no-semi" },
-            }
-          '';
-        };
-        stylua.enable = true;
-        yamlfmt = {
-          enable = true;
-        };
-        hclfmt.enable = true;
       };
     };
   };
