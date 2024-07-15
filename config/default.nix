@@ -12,8 +12,6 @@
     ./plug/colorscheme/colorscheme.nix
 
     ./plug/completion/cmp.nix
-    ./plug/completion/codecompanion.nix
-    ./plug/completion/copilot-cmp.nix
     ./plug/completion/lspkind.nix
 
     ./plug/git/gitblame.nix
