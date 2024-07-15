@@ -1,7 +1,4 @@
-{ pkgs, ... }:
-{
-  filetype.extension.liq = "liquidsoap";
-
+{pkgs, ...}: {
   plugins.treesitter = {
     enable = true;
 
@@ -15,16 +12,10 @@
     };
 
     folding = true;
-    languageRegister.liq = "liquidsoap";
     nixvimInjections = true;
-    grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
+    grammarPackages = [
+      #pkgs.vimPlugins.nvim-treesitter.allGrammars;
+      pkgs.tree-sitter-grammars.tree-sitter-c
+    ];
   };
-
-  extraConfigLua = ''
-    local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-
-    parser_config.liquidsoap = {
-      filetype = "liquidsoap",
-    }
-  '';
 }
