@@ -26,14 +26,13 @@
           ];
         };
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "emoji"; }
+          {name = "nvim_lsp";}
+          {name = "emoji";}
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             keywordLength = 3;
           }
-          { name = "copilot"; }
           {
             name = "path"; # file system paths
             keywordLength = 3;
@@ -42,10 +41,9 @@
             name = "luasnip"; # snippets
             keywordLength = 3;
           }
-          { name = "rg"; }
-          { name = "nvim_lua"; }
-          { name = "git"; }
-
+          {name = "rg";}
+          {name = "nvim_lua";}
+          {name = "git";}
         ];
 
         window = {
@@ -95,7 +93,7 @@
       enable = true;
       settings = {
         gitlab = {
-          hosts = [ "gitlab.dnm.radiofrance.fr" ];
+          hosts = ["gitlab.dnm.radiofrance.fr"];
         };
       };
     }; # git commit messages
