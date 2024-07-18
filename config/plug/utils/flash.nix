@@ -1,15 +1,7 @@
-{ lib, config, ... }:
 {
   plugins.flash = {
-    enable = false;
+    enable = true;
     settings = {
-      label = {
-        uppercase = false;
-        rainbow = {
-          enabled = false;
-          shade = 5;
-        };
-      };
       labels = "asdfghjklqwertyuiopzxcvbnm";
       search = {
         mode = "fuzzy";
@@ -17,15 +9,18 @@
       jump = {
         autojump = true;
       };
+      label = {
+        uppercase = false;
+        rainbow = {
+          enabled = false;
+          shade = 5;
+        };
+      };
     };
   };
-  keymaps = lib.mkIf config.plugins.flash.enable [
+  keymaps = [
     {
-      mode = [
-        "n"
-        "x"
-        "o"
-      ];
+      mode = ["n" "x" "o"];
       key = "s";
       action = "<cmd>lua require('flash').jump()<cr>";
       options = {
@@ -34,11 +29,7 @@
     }
 
     {
-      mode = [
-        "n"
-        "x"
-        "o"
-      ];
+      mode = ["n" "x" "o"];
       key = "S";
       action = "<cmd>lua require('flash').treesitter()<cr>";
       options = {
@@ -56,10 +47,7 @@
     }
 
     {
-      mode = [
-        "x"
-        "o"
-      ];
+      mode = ["x" "o"];
       key = "R";
       action = "<cmd>lua require('flash').treesitter_search()<cr>";
       options = {
