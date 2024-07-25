@@ -7,7 +7,6 @@
       enable = true;
       inlayHints = true;
       servers = {
-<<<<<<< HEAD
         nixd = {
           enable = true;
         };
@@ -15,10 +14,6 @@
           enable = true;
         };
         clangd = {enable = true;};
-=======
-        nil-ls = {enable = true;};
-        # clangd = {enable = true;};
->>>>>>> 9959dd3 (removed clangd from lsp)
       };
       keymaps = {
         silent = true;
