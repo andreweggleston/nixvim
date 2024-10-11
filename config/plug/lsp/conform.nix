@@ -12,10 +12,6 @@
         nix = ["nixfmt"];
         c = ["clang-format"];
       };
-      formatOnSave = {
-        lspFallback = true;
-        timeoutMs = 500;
-      };
     };
   };
 }
