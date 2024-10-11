@@ -7,7 +7,6 @@
         timeoutMs = 500;
       };
       notify_on_error = true;
-
       formatters_by_ft = {
         nix = ["nixfmt"];
         c = ["clang-format"];
