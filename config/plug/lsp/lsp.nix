@@ -13,7 +13,12 @@
         gopls = {
           enable = true;
         };
-        clangd = {enable = true;};
+        clangd = {
+          enable = true;
+        };
+        jdtls = {
+          enable = true;
+        };
       };
       keymaps = {
         silent = true;
