@@ -19,6 +19,9 @@
         jdtls = {
           enable = true;
         };
+        rust-analyzer = {
+          enable = true;
+        };
       };
       keymaps = {
         silent = true;
