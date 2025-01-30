@@ -24,6 +24,10 @@
           installCargo = false;
           installRustc = false;
         };
+        ocamllsp = {
+          enable = true;
+          package = null;
+        };
       };
       keymaps = {
         silent = true;
