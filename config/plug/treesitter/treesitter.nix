@@ -16,6 +16,8 @@
     grammarPackages = [
       #pkgs.vimPlugins.nvim-treesitter.allGrammars;
       pkgs.tree-sitter-grammars.tree-sitter-c
+      pkgs.tree-sitter-grammars.tree-sitter-ocaml
+      pkgs.tree-sitter-grammars.tree-sitter-nix
     ];
   };
 }
