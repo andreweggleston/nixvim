@@ -2,8 +2,7 @@
   config,
   lib,
   ...
-}:
-{
+}: {
   imports = [
     ./autocommands.nix
     ./keys.nix
@@ -57,7 +56,6 @@
     ./plug/utils/flash.nix
     ./plug/utils/grapple.nix
     ./plug/utils/hardtime.nix
-    ./plug/utils/harpoon.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/markview.nix
     ./plug/utils/oil.nix
